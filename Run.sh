@@ -46,10 +46,10 @@ echo "Enter 5 To  Exit "
 read ch
 if [ $ch -eq 1 ];then
 clear
-echo -e "\e[1;32m"
-rm *.xxx >/dev/null 2>&1
+echo -e "\e[1;1m"
+rm *.xxx >/dev/null 3>&2
 python3 send.py
-rm *.xxx >/dev/null 2>&1
+rm *.xxx >/dev/null 3>&2
 exit 0
 elif [ $ch -eq 2 ];then
 clear
